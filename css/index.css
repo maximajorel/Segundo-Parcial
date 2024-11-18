@@ -1,0 +1,287 @@
+/* General estilitos xd */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: url('/img/mejor\ pelicula\ quentin\ tarantino.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 5% 10px;  /* Esto hace que el padding sea más flexible */
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* H1 y H2 son los textos dentro del header */
+header h1 {
+    font-size: 5vw; /* Tamaño relativo para que se ajuste con el tamaño de la pantalla */
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 3vw; /* Ajuste de tamaño más pequeño para el subtítulo */
+}
+
+/* Hacer que el input y el botón del buscador se ajusten también */
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px; /* Limita el tamaño del formulario de búsqueda */
+}
+
+.buscador input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.buscador button {
+    padding: 10px;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    color: #2c2c2c;
+    border-radius: 5px;
+}
+
+/* Cambiar el tamaño de los textos y el layout para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 7vw; /* Ajusta el tamaño para pantallas más pequeñas */
+    }
+
+    header h2 {
+        font-size: 4vw; /* Ajuste proporcional para el subtítulo */
+    }
+
+    .buscador {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .buscador input {
+        font-size: 0.9rem;
+    }
+
+    .buscador button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 8vw; /* Más pequeño en pantallas muy pequeñas */
+    }
+
+    header h2 {
+        font-size: 5vw; /* Ajuste aún más pequeño */
+    }
+
+    .buscador {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .buscador input, .buscador button {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Películas Populares */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Limita el tamaño máximo del carrusel */
+    margin: 0 auto;
+    overflow: hidden; /* Oculta las imágenes fuera del área visible */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 270px; /* Ancho de las imágenes */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px; /* Espacio entre las imágenes */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+
+/* Biografía */
+.biography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #2c2c2c; /* Fondo oscuro similar al de la página */
+    color: #f0f0f0; /* Texto claro como el de la página */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 900px;
+    
+}
+
+.biography h3 {
+    font-size: 2rem;
+    color: #f0f0f0; /* Mantener el color del texto en claro */
+    margin-bottom: 20px;
+}
+
+.imagen-tarantino {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imagen-tarantino img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-tarantino img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+.imagen-tarantino p { 
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0f0f0; /* Color del texto en claro */
+}
+
+/* Botones */
+.actions {
+    display: flex;
+    justify-content: flex-end; /* Mueve los botones al final (lado derecho) */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.actions a button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    color: #2c2c2c;
+}
+
+.actions a button:hover {
+    background-color: #e0c400;
+}
+
+hr {
+    
+    border: 0;
+    border-top: 2px solid #ffd700; /* Línea dorada */
+    width: 21%; /* Ancho de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo */
+    margin-left: auto;  /* Desplaza hacia la derecha */
+    margin-right: 0;    /* Asegura que se quede pegado al lado derecho */
+}
+
+
+/* Footer */
+footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .redes img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+footer .redes img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de los íconos de redes sociales al pasar el ratón */
+}
+
+/* Productos Relacionados */
+.related-products {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.related-products h2 {
+    margin-bottom: 10px;
+}
+
+.related-products button {
+    padding: 10px 15px;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    color: #2c2c2c;
+}
+
+.related-products button:hover {
+    background-color: #e0c400;
+}
+

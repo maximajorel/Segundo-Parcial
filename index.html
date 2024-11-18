@@ -3,48 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quentin Tarantino</title>
+    <link rel="stylesheet" href="css/index.css"> <!-- Vincula el CSS -->
 </head>
 <body>
-    <div>
-        <div class="container">
+    <div class="container">
+        <div class="actions">
+            <a href="./html/Login.html"><button>Iniciar Sesión</button></a>
+            <a href="./html/Register.html"><button>Crear Cuenta</button></a>
+        </div>
+        <hr>
+        <header>
             <h1>Quentin Tarantino</h1> 
             <h2>Encuentra toda la información en la Wikipedia de Quentin Tarantino, más grande del mundo</h2>
             <div class="buscador">
                 <input type="text" placeholder="Buscar..." id="buscar">
-                <button type="submit"="buscar">Buscar</button>
+                <button type="submit">Buscar</button>
             </div>
-            <h3>Peliculas Populares<h3>
-                <div class ="imagenes">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
+        </header>
+        <section class="carousel-section">
+            <h3>Películas Populares</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn left">&#10094;</button>
+                <div class="carousel">
+                    <a href="html/ÉraseunavezenHollywood2019.html">
+                        <img src="img/habia una vez en...jpg" alt="Película 1">
+                    </a>
+                    <a href="html/Django Desencadenado2012.html">
+                        <img src="img/poster-django-sin-cadenas.jpg" alt="Película 2">
+                    </a>
+                    <a href="html/KillBillVol.1y2.html">
+                        <img src="img/kill_bill_volume.jpg" alt="Película 3">
+                    </a>
+                    <a href="html/DeathProof2007.html">
+                        <img src="img/death proof.jpg" alt="Película 4">
+                    </a>
+                    <a href="html/MalditosBastardos(2009).html">
+                        <img src="img/bastardo sin gloria.jfif" alt="Película 5">
+                    </a>
+                    <a href="html/LosOchoMasOdiados2015.html">
+                        <img src="img/los 8 mas odiados.jpg" alt="Película 6">
+                    </a>
+                    <a href="html/PulpFiction1994.html">
+                        <img src="img/tiempos violentos.jpg" alt="Película 7">
+                    </a>
                 </div>
-            <h3>Biografía<h3>
-                <div class="imagen-Tarantino">
-                <img src="" alt="">
-                <p>Queentinsinto tarantinito</p>
-                </div>
-                <a href="./html/Login.html"><button>Iniciar Sesion</button></a>
-                
-                <a href="./html/Register.html"> <button href=".">Crear Cuenta</button></a>
-                
-                <footer class = "imagen redes">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </footer>
-            
-        </div>
-             <h2>Encontra productos relacionados</h2>
-             <a href="./html/ventas.html"><button>Ventas</button></a>
+                <button class="carousel-btn right">&#10095;</button>
+            </div>
+        </section>
 
+        <section class="biography">
+            <h3>Biografía</h3>
+            <div class="imagen-tarantino">
+                <img src="img/tarantino.jfif" alt="Quentin Tarantino">
+                <p>Quentin Tarantino es un director, guionista, productor y actor estadounidense, reconocido por su estilo único en el cine, caracterizado por diálogos intensos, violencia estilizada y una estructura no lineal en sus narrativas. Nació el 27 de marzo de 1963 en Knoxville, Tennessee. A lo largo de su carrera, ha logrado convertirse en uno de los cineastas más influyentes y aclamados del cine contemporáneo.</p>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>Encuentra productos relacionados</h2>
+            <a href="./html/ventas.html"><button>Ventas</button></a>
+        </section>
+
+        <footer>
+            <div class="redes">
+                <!-- Enlace a Facebook -->
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/Facebook_Logo_(2019).png" alt="Facebook">
+                </a>
+                
+                <!-- Enlace a Instagram -->
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                
+                <!-- Enlace a Twitter -->
+                <a href="https://twitter.com" target="_blank">
+                    <img src="img/twitter-icon-logo-25db10.webp" alt="Twitter">
+                </a>
+            </div>
+        </footer>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
+
