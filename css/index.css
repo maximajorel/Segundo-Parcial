@@ -17,12 +17,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.carousel-section{
+
+    background-color: #202020;
+    padding-bottom: 5rem;
+}
 .titulo-peliculas-populares{
     margin-left: 20px;
     font-size: 2rem;
     color: #ffd700;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 
 }
 /* Container */
@@ -208,6 +215,7 @@ body {
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .3s;
 }
 
 .imagen-tarantino img:hover {
