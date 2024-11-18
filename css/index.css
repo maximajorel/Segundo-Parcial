@@ -1,6 +1,6 @@
 /* General estilitos xd */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     background-color: #2c2c2c !important; /* Fondo oscuro */
     color: #f0f0f0; /* Texto claro */
     margin: 0;
@@ -192,7 +192,7 @@ body {
     background-color: #2c2c2c; /* Fondo oscuro similar al de la página */
     color: #f0f0f0; /* Texto claro como el de la página */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(224, 220, 220, 0.315);
     margin: 40px auto;
     max-width: 900px;
     
@@ -262,6 +262,7 @@ footer .redes img:hover {
 .related-products {
     margin-top: 30px;
     text-align: center;
+    color: #ffffff;
 }
 
 .related-products h2 {
@@ -273,7 +274,7 @@ footer .redes img:hover {
     background-color: #ffd700;
     border: none;
     cursor: pointer;
-    color: #2c2c2c;
+    color: #ffffff;
 }
 
 .related-products button:hover {

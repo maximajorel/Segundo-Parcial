@@ -33,5 +33,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // Opcional: Agregar funcionalidad para cambiar automáticamente las imágenes
     setInterval(function() {
         nextButton.click();
-    }, 5000); // Cambia la imagen cada 5 segundos
+    }, 7000); // Cambia la imagen cada 7 segundos
 });
