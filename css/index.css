@@ -1,56 +1,62 @@
 /* General estilitos xd */
 body {
     font-family: Arial, sans-serif;
-    background-color: #2c2c2c; /* Fondo oscuro */
+    background-color: #2c2c2c !important; /* Fondo oscuro */
     color: #f0f0f0; /* Texto claro */
     margin: 0;
     padding: 0;
 }
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: black;
+    background-image: url(../img/mejor\ pelicula\ quentin\ tarantino.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo-peliculas-populares{
+    margin-left: 20px;
+    font-size: 2rem;
+    color: #ffd700;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
+}
 /* Container */
-.container {
+.contenedor {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
-/* Header */
-header {
-    background: url('/img/mejor\ pelicula\ quentin\ tarantino.webp') no-repeat center center;
-    background-size: cover;
+.overlay-hero{
+    background-color: #ffd9008e;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
-    padding: 5% 10px;  /* Esto hace que el padding sea más flexible */
-    height: 100vh;
-    box-sizing: border-box;
+    flex-direction: column;
+    padding: 2rem;
+
 }
 
-/* H1 y H2 son los textos dentro del header */
-header h1 {
-    font-size: 5vw; /* Tamaño relativo para que se ajuste con el tamaño de la pantalla */
-    margin-bottom: 10px;
-}
 
-header h2 {
-    font-size: 3vw; /* Ajuste de tamaño más pequeño para el subtítulo */
-}
-
-/* Hacer que el input y el botón del buscador se ajusten también */
-.buscador {
+/* Hacer que el input y el botón del buscador-hero se ajusten también */
+.buscador-hero {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     gap: 10px;
     width: 100%;
+    z-index: 99;
     max-width: 400px; /* Limita el tamaño del formulario de búsqueda */
 }
 
-.buscador input {
+.buscador-hero input {
     flex: 1;
     padding: 10px;
     font-size: 1rem;
@@ -58,7 +64,7 @@ header h2 {
     border: none;
 }
 
-.buscador button {
+.buscador-hero button {
     padding: 10px;
     background-color: #ffd700;
     border: none;
@@ -82,16 +88,16 @@ header h2 {
         font-size: 4vw; /* Ajuste proporcional para el subtítulo */
     }
 
-    .buscador {
+    .buscador-hero {
         width: 80%;
         max-width: 350px;
     }
 
-    .buscador input {
+    .buscador-hero input {
         font-size: 0.9rem;
     }
 
-    .buscador button {
+    .buscador-hero button {
         font-size: 0.9rem;
     }
 }
@@ -109,12 +115,12 @@ header h2 {
         font-size: 5vw; /* Ajuste aún más pequeño */
     }
 
-    .buscador {
+    .buscador-hero {
         width: 90%;
         max-width: 300px;
     }
 
-    .buscador input, .buscador button {
+    .buscador-hero input, .buscador-hero button {
         font-size: 0.8rem;
     }
 }
@@ -213,25 +219,6 @@ header h2 {
     font-size: 1rem;
     line-height: 1.6;
     color: #f0f0f0; /* Color del texto en claro */
-}
-
-/* Botones */
-.actions {
-    display: flex;
-    justify-content: flex-end; /* Mueve los botones al final (lado derecho) */
-    gap: 10px; /* Espacio entre los botones */
-}
-
-.actions a button {
-    padding: 10px 20px;
-    background-color: #ffd700;
-    border: none;
-    cursor: pointer;
-    color: #2c2c2c;
-}
-
-.actions a button:hover {
-    background-color: #e0c400;
 }
 
 hr {
