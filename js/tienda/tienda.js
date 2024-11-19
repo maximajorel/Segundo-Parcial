@@ -1,7 +1,7 @@
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 
-function añadirProducto(nombre,precio, imagen){
+function añadirProducto(nombre,precio, cantidad){
     
     const productoExistenteEnCarrito = carrito.find(producto => producto.nombre === nombre);
     console.log(productoExistenteEnCarrito);
@@ -14,7 +14,7 @@ function añadirProducto(nombre,precio, imagen){
           });
 
     }else{
-        carrito.push({nombre,precio});
+        carrito.push({nombre,precio,cantidad});
         localStorage.setItem('carrito', JSON.stringify(carrito));
         Swal.fire({
             icon: "success",

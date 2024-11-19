@@ -7,21 +7,37 @@
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: white !important;
 }
-/* Botones */
-.actions {
+.nav-link{
+
+    color: white;
+    transition:   .3s;
+    
+}
+.nav-link:hover{
+    color: #ffd700;
+    transform: translateY(-5px);
+}
+.contenedor-botones-header{
+
     display: flex;
-    justify-content: flex-end; /* Mueve los botones al final (lado derecho) */
-    gap: 10px; /* Espacio entre los botones */
+    gap:20px;
+    align-items: center;
+    margin-right: 10px;
 }
 
-.actions a button {
-    padding: 10px 20px;
+.login-button{
+    padding: 5px 5px;
     background-color: #ffd700;
     border: none;
     cursor: pointer;
     color: #2c2c2c;
 }
 
-.actions a button:hover {
+.login-button:hover {
     background-color: #e0c400;
+}
+.navbar-brand{
+    color:#e0c400;
+    font-weight: 900;
+
 }

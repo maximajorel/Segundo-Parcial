@@ -39,10 +39,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    padding-bottom: 0;
+    padding: 2rem;
+   
     border-radius: 20px;
-    height: 400px;
+    height: 450px;
+    
 }
 .boton-añadir-carrito{
     background-color: #ffd700;
@@ -51,6 +52,14 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+  
+
+}
+.imagen-producto{
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 250px;
     margin-top: 10px;
 
 }
