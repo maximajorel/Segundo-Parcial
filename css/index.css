@@ -23,10 +23,7 @@ body {
     background-color: #202020;
     padding-bottom: 5rem;
 }
-.swiper-wraper{
-    display: flex;
-    gap: 20PX;
-}
+
 .titulo-peliculas-populares{
     margin-left: 20px;
     font-size: 2rem;
@@ -138,50 +135,63 @@ body {
 
 
 /* Películas Populares */
-.swiper {
-    margin-top: 40px;   
-}
-.swiper-slide {
-    margin-bottom: 50px;
-    background-color: #2c2c2c;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    height: 420px;
-    width: 295px;
+.slider-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
     position: relative;
+    margin-top: 2rem;
 }
-.swiper-slide img {
-    width: 295px;
-    border-radius: 15px;
-    height: 420px;
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
 }
-.swiper-text {
+
+.slider img {
+    flex: 1 0 auto;
+    scroll-snap-align: start;
+    object-fit: cover;
+    width: 100%;
+    max-width: 375px; /* Ajustar a 400px */
+    margin: 0 45px; /* Agregar un margen horizontal entre las imágenes */
+}
+
+.slider-nav {
     position: absolute;
-    padding: 25px;
-}
-.swiper-text h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-.desktop {
-    text-align: center;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     z-index: 1;
 }
-.desktop img {
-    width: 800px;
+
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
 }
-@media(max-width:991px) {
-    .navbar {
-        padding: 30px;
-    }
-    .left {
-        display: none;
-    }
-    .swiper {
-        padding: 0 70px;
-    }
-    .swiper-slide img {
-        width: 100%;
+.slider a  {
+    display: block;
+    text-decoration: none;
+}
+
+.slider a img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .slider img {
+        max-width: 300px; /* Para pantallas más pequeñas */
     }
 }
 /* final peliculas populares */
