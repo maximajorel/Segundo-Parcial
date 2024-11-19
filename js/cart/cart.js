@@ -1,8 +1,5 @@
 function eliminarProducto(nombre){
-    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    const nuevoCarrito = carrito.filter(producto => producto.nombre !== nombre);
-    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
-    mostrarCarrito();
+    
 }
 function mostrarCarrito(){
 
@@ -20,15 +17,23 @@ function mostrarCarrito(){
         fila.appendChild(nombre);
 
         const precio = document.createElement('td');
-        precio.textContent = producto.precio;
+        precio.textContent = "$" + producto.precio;
         fila.appendChild(precio);
 
         const cantidad = document.createElement('td');
-        cantidad.textContent = 1;
+        const inputCantidad = document.createElement('input');
+        inputCantidad.type = 'number';
+        inputCantidad.value = 1;
+        inputCantidad.min = 1;
+        inputCantidad.classList.add('form-control');
+        inputCantidad.oninput = () => {
+            subtotal.textContent = "$" + producto.precio * inputCantidad.value;
+        };
+        cantidad.appendChild(inputCantidad);
         fila.appendChild(cantidad);
 
         const subtotal = document.createElement('td');
-        subtotal.textContent = producto.precio * cantidad.textContent;
+        subtotal.textContent = "$" + producto.precio * inputCantidad.value;
         fila.appendChild(subtotal);
 
         const eliminar = document.createElement('td');
