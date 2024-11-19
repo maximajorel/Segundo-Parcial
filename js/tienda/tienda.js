@@ -10,7 +10,7 @@ function añadirProducto(nombre,precio, cantidad){
             icon: "error",
             title: `El producto ${nombre} ya se encuentra en el carrito`,
             text: "Puedes ir al carrito o agregar mas productos ",
-            footer: '<a href="#">Ir al carrito</a>'
+            footer: '<a href="../../html/cart/carrito.html">Ir al carrito</a>'
           });
 
     }else{
