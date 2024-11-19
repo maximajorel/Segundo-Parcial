@@ -63,3 +63,19 @@ body{
     margin-top: 10px;
 
 }
+
+@media screen and (max-width: 768px){
+    .contenedor-productos{
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .card-producto{
+        width: 100%;
+    }
+    .imagen-producto{
+        min-width: 200px;
+        max-width: 200px;
+        max-height: 250px;
+    }
+    
+}

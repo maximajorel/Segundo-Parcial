@@ -65,3 +65,11 @@ span#totalCarrito{
     color: white;
 
 }
+
+@media screen and (max-width : 768px) {
+    .contenedor-tabla-carrito{
+    
+        overflow-x: scroll;
+        
+    }
+}
