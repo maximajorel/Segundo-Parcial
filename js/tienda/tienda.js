@@ -20,7 +20,7 @@ function añadirProducto(nombre,precio, cantidad){
             icon: "success",
             title: `${nombre} fue añadido al carrito`,
             text: "Puedes ir al carrito o agregar mas productos ",
-            footer: '<a href="#">Ir al carrito</a>'
+            footer: '<a href="../../html/cart/carrito.html">Ir al carrito</a>'
           });
     
 
