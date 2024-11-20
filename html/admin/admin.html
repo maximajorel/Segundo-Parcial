@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
+    
+    <title>Administracion</title>
+</head>
+<body>
+    <section class="contenedor-titulo-admin">
+        <h2>Bienvenido administrador</h2>
+    </section>
+    <section class="contenedor-botones-acciones-admin">
+        <button class="boton-mostrar-calculadora boton-accion">
+            Mostrar calculadora
+        </button>
+        <button class="boton-mostrar-tareas boton-accion">
+            Mostrar lista de tareas
+        </button>
+    </section>
+    <section>
+        <div class="contenedor-calculadora">
+            <h3 class="titulo-funcionalidad">Calculadora</h3>
+            <form name="calc">
+                <div>
+                    <input id="display" name="display" type="text"  readonly>
+                </div>
+    
+                <div class="row text-center">
+                    <div class="col btn-group">
+                        <button type="button"  onClick="document.calc.display.value+='7'">7</button>
+                        <button type="button"  onClick="document.calc.display.value+='8'">8</button>
+                        <button type="button"  onClick="document.calc.display.value+='9'">9</button>
+                        <button type="button"  onClick="document.calc.display.value+='/'">/</button>
+                    </div>
+                </div>
+           
+                <div class="row text-center">
+                    <div class="col btn-group">
+                        <button type="button"  onClick="document.calc.display.value+='4'">4</button>
+                        <button type="button"  onClick="document.calc.display.value+='5'">5</button>
+                        <button type="button"  onClick="document.calc.display.value+='6'">6</button>
+                        <button type="button"  onClick="document.calc.display.value+='*'">*</button>
+                    </div>
+                </div>
+        
+                <div class="row text-center">
+                    <div class="col btn-group">
+                        <button type="button"  onClick="document.calc.display.value+='1'">1</button>
+                        <button type="button"  onClick="document.calc.display.value+='2'">2</button>
+                        <button type="button"  onClick="document.calc.display.value+='3'">3</button>
+                        <button type="button"  onClick="document.calc.display.value+='-'">-</button>
+                    </div>
+                </div>
+           
+                <div class="row text-center">
+                    <div class="col btn-group">
+                        <button type="button"  onClick="document.calc.display.value+='0'">0</button>
+                        <button type="button"  onClick="document.calc.display.value=''">C</button>
+                        <button type="button"  onClick="document.calc.display.value=eval(document.calc.display.value)">=</button>
+                        <button type="button"  onClick="document.calc.display.value+='+'">+</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+        </div>
+        <div class="contenedor-tareas">
+            <h3 class="titulo-funcionalidad">Lista de Tareas</h3>
+            <input type="text"  id="nueva-tarea" placeholder="Nueva tarea">
+
+            <button class="boton-agregar-tarea" id="agregar-tarea">Agregar Tarea</button>
+            <ul id="lista-tareas">
+
+                <!-- Aqui van las tareas -->
+
+            </ul>
+        </div>
+    </section>
+    <script src="../../js/admin/admin.js"></script>
+</body>
+
+</html>
+
+

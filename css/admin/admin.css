@@ -1,0 +1,87 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #2c2c2c ; 
+    color: #f0f0f0; 
+    margin: 0;
+    padding: 0;
+}
+.contenedor-calculadora{
+
+    display: none;
+    padding: 2rem;
+}
+.contenedor-tareas{
+
+    display: none;
+    padding: 2rem;
+}
+.mostrar-seccion{
+    display: block;
+}
+
+.contenedor-titulo-admin{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color:#ffd700 ;
+    background-color: #202020;
+    margin-bottom: 3rem;
+
+
+}
+.contenedor-botones-acciones-admin{
+    display: flex;
+    gap: 20px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-accion{
+
+    background-color: #ffd700;
+    padding: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.boton-accion:hover{
+    background-color: #ffd900d1;
+    color: #2c2c2c;
+}
+
+.titulo-funcionalidad{
+    font-weight: 900;
+    color: #ffd700;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+#nueva-tarea{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+.boton-agregar-tarea{
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 20px;
+}
+.boton-eliminar-tarea{
+    margin-left: 10px;
+    background-color: #ff3636;
+    color: white;
+    border-radius: 5px;
+    padding: .3rem;
+    border:none;
+    cursor: pointer;
+}
+.tarea-li{
+    margin-top: 10px;
+}

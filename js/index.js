@@ -1,6 +1,6 @@
 let currentIndex = 0;
 const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slider img');
+const slides = document.querySelectorAll('.slider a');
 const totalSlides = slides.length;
 
 function moveToSlide(index) {
