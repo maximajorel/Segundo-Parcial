@@ -39,3 +39,18 @@ botonAgregarTarea.addEventListener("click", () => {
     inputNuevaTarea.value = "";
   }
 });
+
+// Con esto la calculadora funciona con el teclado
+
+document.addEventListener("keydown", function(event) {
+  const allowedKeys = "0123456789+-*/";
+  if (allowedKeys.includes(event.key)) {
+      document.calc.display.value += event.key;
+  }
+  if (event.key === "Enter") {
+      document.calc.display.value = eval(document.calc.display.value);
+  }
+  if (event.key === "Backspace") {
+      document.calc.display.value = document.calc.display.value.slice(0, -1);
+  }
+});
