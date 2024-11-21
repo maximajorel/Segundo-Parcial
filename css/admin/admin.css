@@ -84,4 +84,6 @@ body{
 }
 .tarea-li{
     margin-top: 10px;
+    color: white;
+    list-style:disc white;   
 }
