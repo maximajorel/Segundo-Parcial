@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('/Segundo-Parcial/img/kill_bill_volume.jpg');
+    background-image: url('/img/kill_bill_volume.jpg');
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: contain;
     background-color: #e9cb1d;
