@@ -135,65 +135,51 @@ body {
 
 
 /* Películas Populares */
-.slider-wrapper {
-    width: 75%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    margin-top: 2rem;
-}
-
-.slider {
+/* Contenedor para las imágenes */
+.image-gallery {
     display: flex;
-    transition: transform 0.5s ease;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
+    gap: 15px; /* Espacio entre las imágenes */
+    margin-top: 1rem;
 }
 
-.slider img {
-    flex: 1 0 auto;
-    scroll-snap-align: start;
-    object-fit: cover;
-    width: 100%;
-    max-width: 375px; /* Ajustar a 400px */
-    margin: 0 45px; /* Agregar un margen horizontal entre las imágenes */
-}
-
-.slider-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-}
-
-.slider-nav button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 50%;
-}
-.slider a  {
+/* Estilo de cada imagen dentro del contenedor */
+.image-item {
+    width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
+    max-width: 250px; /* Limita el ancho máximo de las imágenes */
+    height: 300px; /* Establece una altura fija */
     display: block;
-    text-decoration: none;
+    border-radius: 10px; /* Esquinas redondeadas */
+    overflow: hidden; /* Evita que la imagen sobresalga de su contenedor */
 }
 
-.slider a img {
-    width: 100%;
-    height: auto;
+/* Estilo de la imagen dentro de cada item */
+.image-item img {
+    width: 100%; /* Hace que la imagen ocupe todo el contenedor */
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra el espacio sin deformarse */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones para los efectos */
 }
 
-.slider-nav button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+/* Efecto hover para aumentar la opacidad y el zoom */
+.image-item:hover img {
+    opacity: 0.9; /* Le da un pequeño efecto de opacidad */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
 }
 
+/* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
-    .slider img {
-        max-width: 300px; /* Para pantallas más pequeñas */
+    .image-gallery {
+        justify-content: space-around; /* Cambia la alineación en pantallas más pequeñas */
+    }
+    .image-item {
+        width: 100%;
+        max-width: 200px; /* Hace que las imágenes sean más pequeñas en pantallas móviles */
     }
 }
+
+
 /* final peliculas populares */
 
 /* Biografía */
