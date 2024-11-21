@@ -100,3 +100,14 @@ footer .redes img {
 footer .redes img:hover {
     transform: scale(1.2);
 }
+@media screen and (max-width: 425px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }    
+    .portada{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
