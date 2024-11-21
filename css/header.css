@@ -9,12 +9,12 @@
 }
 .nav-link{
 
-    color: white;
+    color: white !important;
     transition:   .3s;
     
 }
 .nav-link:hover{
-    color: #ffd700;
+    color: #ffd700 !important;
     transform: translateY(-5px);
 }
 .contenedor-botones-header{
@@ -34,10 +34,10 @@
 }
 
 .login-button:hover {
-    background-color: #e0c400;
+    background-color: #e0c400 !important;
 }
 .navbar-brand{
-    color:#e0c400;
+    color:#e0c400 !important;
     font-weight: 900;
 
 }
