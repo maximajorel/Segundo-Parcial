@@ -16,6 +16,11 @@ botonMostrarTareas.addEventListener("click", () => {
   contenedorCalculadora.classList.remove("mostrar-seccion");
 });
 
+
+const botonMostrarTareasaction = () =>{
+
+  contenedorCalculadora.classList.add("mostrar-seccion");
+}
 // Tareas
 
 const inputNuevaTarea = document.getElementById("nueva-tarea");

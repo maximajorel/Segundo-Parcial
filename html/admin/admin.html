@@ -23,20 +23,19 @@
                     <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/index.html#biografia">Biografia</a>
+                    <a class="nav-link" href="#">Biografia</a>
                   </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html#filmografia">Filmografía</a>
+                        <a class="nav-link" href="#">Filmografía</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/html/productos/tienda.html">Tienda</a>
+                        <a class="nav-link" href="../../html/productos/tienda.html">Tienda</a>
                     </li>
 
                 </ul>
                 <div class="contenedor-botones-header">
-                    <a href="/html/Login.html">
-                <button class="login-button">Iniciar sesion</button></a>
-                <a href="/html/cart/carrito.html">
+                <button class="login-button">Iniciar sesion</button>
+                <a href="../cart/carrito.html">
                     <i class="fa-solid fa-cart-shopping" style="color: #FFD43B;"></i>
                 </a>
                 </div>
@@ -58,7 +57,7 @@
     <section>
         <div class="contenedor-calculadora">
             <h3 class="titulo-funcionalidad">Calculadora</h3>
-            <form name="calc">
+            <form name="calc" onSubmit="event.preventDefault()">
                 <div>
                     <input id="display" name="display" type="text"  readonly>
                 </div>
